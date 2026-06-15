@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-app
+  namespace: alto
+  labels:
+    app: java-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: java-app
+  template:
+    metadata:
+      labels:
+        app: java-app
+    spec:
+      containers:
+      - name: java-app
+        image: 908416136195.dkr.ecr.ap-southeast-1.amazonaws.com/fzhao0504/e5b84e98183b7d793f496bbe722f806ac79f2c68
+        ports:
+          - containerPort: 3000
