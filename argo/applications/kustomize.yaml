@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: http://192.168.0.101:32000/
+    repoURL: https://github.com/vzhao0504/argocd.git
     targetRevision: HEAD
-    path: kustomize/overlays/dev
+    path: overlays/dev
   destination:
     server: https://kubernetes.default.svc
-    namespace: grade-demo
+    namespace: alto-dev
   syncPolicy:
     automated:
       prune: true
