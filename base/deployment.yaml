@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: java-app
-  namespace: alto
+  namespace: alto-kustomize
   labels:
     app: java-app
 spec:
@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: java-app
-        image: 908416136195.dkr.ecr.ap-southeast-1.amazonaws.com/fzhao0504/e5b84e98183b7d793f496bbe722f806ac79f2c68
+        image: rslim087/kubernetes-course-grade-submission-api:stateless
         ports:
           - containerPort: 3000

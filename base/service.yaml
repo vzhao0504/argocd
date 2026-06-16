@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: java-app-svc
-  namespace: alto
+  namespace: alto-kustomize
 spec:
   type: NodePort
   selector:
