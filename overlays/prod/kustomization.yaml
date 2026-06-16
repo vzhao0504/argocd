@@ -4,6 +4,8 @@ kind: Kustomization
 resources:
   - ../../base
 
+namespace: alto-prod
+
 namePrefix: prod-
 nameSuffix: ""
 
