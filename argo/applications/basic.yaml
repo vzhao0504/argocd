@@ -10,7 +10,7 @@ spec:
     targetRevision: HEAD
     path: gitops/basic
   destination:
-    server: https://192.168.0.101
+    server: https://kubernetes.default.svc
     namespace: alto
   syncPolicy:
     automated:
